@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B210BBCB286DF5A1006C5363 /* GetPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210BBCA286DF5A1006C5363 /* GetPhotoViewController.swift */; };
+		B28DC846286498F200B82C6E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28DC845286498F200B82C6E /* Models.swift */; };
+		B28DC84A286CCFEE00B82C6E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28DC849286CCFEE00B82C6E /* UserViewController.swift */; };
 		B2B78DED2858FEFC00273EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78DEC2858FEFC00273EEE /* AppDelegate.swift */; };
 		B2B78DEF2858FEFC00273EEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78DEE2858FEFC00273EEE /* SceneDelegate.swift */; };
 		B2B78DF12858FEFC00273EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78DF02858FEFC00273EEE /* ViewController.swift */; };
 		B2B78DF42858FEFC00273EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B78DF22858FEFC00273EEE /* Main.storyboard */; };
 		B2B78DF62858FEFE00273EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B78DF52858FEFE00273EEE /* Assets.xcassets */; };
 		B2B78DF92858FEFE00273EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B78DF72858FEFE00273EEE /* LaunchScreen.storyboard */; };
+		B2B78E012858FF3D00273EEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78E002858FF3D00273EEE /* MainViewController.swift */; };
+		B2B78E032858FFAC00273EEE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78E022858FFAC00273EEE /* UserActionCell.swift */; };
+		B2B78E052859021F00273EEE /* UserActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78E042859021F00273EEE /* UserActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B210BBCA286DF5A1006C5363 /* GetPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoViewController.swift; sourceTree = "<group>"; };
+		B28DC845286498F200B82C6E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B28DC849286CCFEE00B82C6E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B2B78DE92858FEFC00273EEE /* All for fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All for fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B78DEC2858FEFC00273EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2B78DEE2858FEFC00273EEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		B2B78DF52858FEFE00273EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2B78DF82858FEFE00273EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2B78DFA2858FEFE00273EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B78E002858FF3D00273EEE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B2B78E022858FFAC00273EEE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		B2B78E042859021F00273EEE /* UserActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B210BBCC286DF637006C5363 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28DC845286498F200B82C6E /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B210BBCD286DF649006C5363 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B210BBCA286DF5A1006C5363 /* GetPhotoViewController.swift */,
+				B28DC849286CCFEE00B82C6E /* UserViewController.swift */,
+				B2B78E002858FF3D00273EEE /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		B2B78DE02858FEFC00273EEE = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +86,14 @@
 		B2B78DEB2858FEFC00273EEE /* All for fun */ = {
 			isa = PBXGroup;
 			children = (
+				B210BBCC286DF637006C5363 /* Model */,
 				B2B78DEC2858FEFC00273EEE /* AppDelegate.swift */,
 				B2B78DEE2858FEFC00273EEE /* SceneDelegate.swift */,
 				B2B78DF02858FEFC00273EEE /* ViewController.swift */,
 				B2B78DF22858FEFC00273EEE /* Main.storyboard */,
+				B2B78E042859021F00273EEE /* UserActionView.swift */,
+				B210BBCD286DF649006C5363 /* View Controllers */,
+				B2B78E022858FFAC00273EEE /* UserActionCell.swift */,
 				B2B78DF52858FEFE00273EEE /* Assets.xcassets */,
 				B2B78DF72858FEFE00273EEE /* LaunchScreen.storyboard */,
 				B2B78DFA2858FEFE00273EEE /* Info.plist */,
@@ -138,9 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B78E032858FFAC00273EEE /* UserActionCell.swift in Sources */,
+				B28DC84A286CCFEE00B82C6E /* UserViewController.swift in Sources */,
+				B210BBCB286DF5A1006C5363 /* GetPhotoViewController.swift in Sources */,
 				B2B78DF12858FEFC00273EEE /* ViewController.swift in Sources */,
 				B2B78DED2858FEFC00273EEE /* AppDelegate.swift in Sources */,
+				B2B78E052859021F00273EEE /* UserActionView.swift in Sources */,
 				B2B78DEF2858FEFC00273EEE /* SceneDelegate.swift in Sources */,
+				B2B78E012858FF3D00273EEE /* MainViewController.swift in Sources */,
+				B28DC846286498F200B82C6E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
