@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GetPhotoViewController: UIViewController {
+class PhotoViewController: UIViewController {
     
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var imageView: UIImageView!
@@ -22,9 +22,9 @@ class GetPhotoViewController: UIViewController {
         
         fetchImage()
     }
-    
 }
-extension GetPhotoViewController {
+
+extension PhotoViewController {
     func fetchImage() {
         guard let url = URL(string: imageDog) else { return }
         
@@ -37,9 +37,9 @@ extension GetPhotoViewController {
             
             do {
                 let someImage = try JSONDecoder().decode(Cats.self, from: data)
-                guard let stringURL = someImage.url else {return}
-                guard let image = URL(string: stringURL) else { return }
-                guard let imageData = try? Data(contentsOf: image) else { return }
+                guard let stringURL = someImage.url,
+                      let imageURL = URL(string: stringURL)else {return}
+                guard let imageData = try? Data(contentsOf: imageURL) else { return }
                 
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: imageData)

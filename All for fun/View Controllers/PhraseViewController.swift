@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+class PhraseViewController: UIViewController {
     
     @IBOutlet var phraseLabel: UILabel!
     
@@ -20,7 +20,7 @@ class UserViewController: UIViewController {
     }
 }
 
-extension UserViewController {
+extension PhraseViewController {
     func fetchPhrases() {
         guard let url = URL(string: url) else { return }
         

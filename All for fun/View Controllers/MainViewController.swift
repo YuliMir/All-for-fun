@@ -21,7 +21,6 @@ class MainViewController: UICollectionViewController {
     
     let userActions = UserAction.allCases
     
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return userActions.count
     }
@@ -42,10 +41,9 @@ class MainViewController: UICollectionViewController {
         case .phrases: performSegue(withIdentifier: "showSegue", sender: nil)
         case .pictures: performSegue(withIdentifier: "getPhotoSegue", sender: nil)
         }
-        
     }
-    
 }
+
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_collectionview: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
